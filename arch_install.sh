@@ -9,7 +9,6 @@ PARTITIONS='
 	size=30G, type=
 	type=
 '
-
 DISK="/dev/sda"
 MIRROR="Australia"
 
@@ -59,12 +58,15 @@ pacman -Syu
 timedatectl set-ntp true
 
 #INSTALL Base System
+
+#MIRRORLIST re-arrange
 vim /etc/pacman.d/mirrorlist \
 '+5' '+read ! echo' \
 '+r ! grep "'"${MIRROR}"'" -A 1 % | grep -v "^--"' \
 '+wq'
 
 local CORE_PACKAGES=(base base-devel grub openssh sudo ntp wget neovim iw wpa_supplicant dialog)
+pacman-key --refresh-keys
 pacstrap /mnt/ ${CORE_PACKAGES}
 genfstab -U /mnt/ >> /mnt/etc/fstab
 
@@ -106,7 +108,6 @@ echo "$HOSTNAME" > /etc/hostname
 systemctl enable sshd.service
 systemctl enable dhcpcd.service
 systemctl enable ntpd.service
-
 
 #exit chroot
 exit
