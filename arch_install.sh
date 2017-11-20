@@ -35,6 +35,7 @@ while true; do
 done
 
 #PARTITION the disk
+#THIS WILL BE MANUAL
 fdisk /dev/sda
 
 mkfs.ext4 /dev/sda1	#boot BIOS
@@ -75,7 +76,7 @@ arch-chroot /mnt/
 
 #CORE Configuration
 ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
-hwclock --systohc #assumes HW clock is sete to UTC
+hwclock --systohc #assumes HW clock is set to UTC
 
 #LOCALE Setup
 sed -i 's/^#en_AU\.UTF/en_AU\.UTF/' /etc/locale.gen
@@ -92,14 +93,14 @@ useradd -m -G wheel -s /usr/bin/bash $USERNAME
 echo $USERNAME:$PASSWORD | chpasswd
 
 #BOOTLOADER Grub install
-grub-install --targer=i386-pc ${DISK}
+grub-install --target=i386-pc ${DISK}
 grub-mkconfig -o /boot/grub/grub.cfg
 
 #SUDOERS uncomment %wheel ALL=(ALL) ALL" from sudoers
 sed -i 's/^#\s*\(%wheel\s*ALL=(ALL)\s*NOPASSWD:\s*ALL\)/\1/' /etc/sudoers
 
 #VIM EDITOR Environment Variable
-echo -e 'EDITOR=vim' > /etc/environment
+echo -e 'EDITOR=nvim' > /etc/environment
 
 #HOSTNAME set
 echo "$HOSTNAME" > /etc/hostname
