@@ -66,7 +66,7 @@ vim /etc/pacman.d/mirrorlist \
 '+r ! grep "'"${MIRROR}"'" -A 1 % | grep -v "^--"' \
 '+wq'
 
-local CORE_PACKAGES=(base base-devel grub openssh sudo ntp wget neovim iw wpa_supplicant dialog)
+local CORE_PACKAGES=(base base-devel grub openssh sudo ntp wget neovim iw wpa_supplicant dialog wireless_toolsq)
 pacman-key --refresh-keys
 pacstrap /mnt/ ${CORE_PACKAGES}
 genfstab -U /mnt/ >> /mnt/etc/fstab
