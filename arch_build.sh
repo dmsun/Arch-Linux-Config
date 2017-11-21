@@ -7,17 +7,17 @@
 #BASH
 BASH=bash-completion
 
+#GRAPHICS
+GRAPHICS="nvidia nvidia-settings opencl-nvidia ocl-icd vulkan-icd-loader"
+
+#SOUND
+SOUND="alsa-firmware alsa-tools alsa-utils pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-gconf pulseaudio-jack"
+
 #UTILITIES
 UTIL="openssh rsync samba transmission-gtk unrar wireless_tools gparted gzip htop imagemagick bzip2 deepin-screenshot ecm-tools"
 
 #FONTS
 AUR_FONTS="ttf-ms-fonts numix-circle-icon-theme-git numix-gtk-theme-git numix-icon-theme-git paper-gtk-theme-git paper-icon-theme"
-
-#SOUND
-SOUND="alsa-firmware alsa-tools alsa-utils pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-gconf pulseaudio-jack"
-
-#GRAPHICS
-GRAPHICS="nvidia nvidia-settings opencl-nvidia ocl-icd vulkan-icd-loader"
 
 #XSERVER
 XSERV="xorg-server xorg-twm xorg-xclock xorg-xinit"
@@ -46,6 +46,9 @@ AUR_DATA=anaconda #maybedothismanually
 #AUR
 AUR="conky-colors-git conky-nvidia archey3 discord dropbox nautilus-dropbox nautilus-admin rednotebook spotify tilix whatsapp-desktop discord"
 
-sudo pacman -Syu ${BASH} ${SOUND}
+sudo pacman -Syu ${BASH}
+sudo pacman -Syu ${UTIL}
+sudo pacman -Syu ${SOUND}
+sudo pacman -Syu
 
 

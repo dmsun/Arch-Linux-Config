@@ -22,7 +22,6 @@ LOCALE="en_AU.utf-8"
 
 USERNAME="mj"
 
-USERPACKAGES="gnome"
 #define passwds
 
 while true; do
