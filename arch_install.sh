@@ -1,6 +1,6 @@
 #! usr/bin/env bash
 # to run:
-# wget raw.githubusercontent.com/dmsun/Arch-Linux-Config/arch_install.sh
+# wget raw.githubusercontent.com/dmsun/Arch-Linux-Config/master/arch_install.sh
 #chmod +x arch_install.sh
 #./arch_install
 
@@ -89,7 +89,7 @@ echo "LANG=${LOCALE}" > /etc/locale.conf
 echo "root:$PASSWORD" | chpasswd
 
 #USERS add
-useradd -m -G wheel -s /usr/bin/bash $USERNAME
+useradd -m -G wheel -s /bin/bash $USERNAME
 echo $USERNAME:$PASSWORD | chpasswd
 
 #BOOTLOADER Grub install
