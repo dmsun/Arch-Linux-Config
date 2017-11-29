@@ -34,85 +34,102 @@ while true; do
 done
 
 #PARTITION the disk
-#THIS WILL BE MANUAL
+#TODO - auto update this with user entry
+echo "Formatting the drives for install"
 fdisk /dev/sda
 
+echo "Creating the file system"
 mkfs.ext4 /dev/sda1	#boot BIOS
 mkfs.ext4 /dev/sda2	#root
 mkfs.ext4 /dev/sda3	#home
 
+echo "Mounting the partitions"
 mount /dev/sda2 /mnt/	#root
 mkdir /mnt/boot
 mount /dev/sda1 /mnt/boot
 mkdir /mnt/home
 mount /dev/sda3 /mnt/home
 
-
 #Check the internet
+echo "Checking the internet connection"
 ping www.google.com
 
-#UPDATE pacman
+#Update pacman
+echo "Updating pacman"
 pacman -Syu
 
 #Update system clock
+echo "Setting the time to ntp"
 timedatectl set-ntp true
 
-#INSTALL Base System
-
-#MIRRORLIST re-arrange
+#Re-arranging entries in Mirrorlist
+echo "Re-arranging the Mirrorlist for Australia"
 vim /etc/pacman.d/mirrorlist \
 '+5' '+read ! echo' \
 '+r ! grep "'"${MIRROR}"'" -A 1 % | grep -v "^--"' \
 '+wq'
 
-local CORE_PACKAGES="base base-devel grub openssh sudo ntp wget neovim iw wpa_supplicant dialog wireless_toolsq"
+#Install the Base system
+echo "Installing the base system"
+local CORE_PACKAGES="base base-devel grub openssh ntp wget neovim iw wpa_supplicant dialog wireless_tools"
 pacman-key --refresh-keys
 pacstrap /mnt/ ${CORE_PACKAGES}
-genfstab -U /mnt/ >> /mnt/etc/fstab
+genfstab
 
-#CHROOT into system
+#Change root into system
+echo "Changing root into the newly installed system"
 arch-chroot /mnt/
 
-#CORE Configuration
+#Core Configuration
+echo "Configuring the timezone"
 ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
 hwclock --systohc #assumes HW clock is set to UTC
 
-#LOCALE Setup
+#Setting up the locale information
+echo "Configuring the locale.gen and default Language"
 sed -i 's/^#en_AU\.UTF/en_AU\.UTF/' /etc/locale.gen
-
-#Generate the locale
 locale-gen
 echo "LANG=${LOCALE}" > /etc/locale.conf
 
-#ROOT password
+#Change root password
+echo "Enter in the root password below"
 echo "root:$PASSWORD" | chpasswd
 
-#USERS add
+#Add users
+echo "Adding default users to wheel group with bash shell"
 useradd -m -G wheel -s /bin/bash $USERNAME
+echo "Changing the username passwords"
 echo $USERNAME:$PASSWORD | chpasswd
 
-#BOOTLOADER Grub install
+#Installing Grub for a bootloader
+echo "Installing and configuring GRUB"
 grub-install --target=i386-pc ${DISK}
 grub-mkconfig -o /boot/grub/grub.cfg
 
-#SUDOERS uncomment %wheel ALL=(ALL) ALL" from sudoers
+#Updating the SUDOERS file to uncomment %wheel ALL=(ALL) ALL" from sudoers
+echo "Updating the SUDOERS file"
 sed -i 's/^#\s*\(%wheel\s*ALL=(ALL)\s*NOPASSWD:\s*ALL\)/\1/' /etc/sudoers
 
-#VIM EDITOR Environment Variable
+#Adding Neo-Vim environment variable and changing the default editor
+echo "Setting Neo-vim to be the default Editor"
 echo -e 'EDITOR=nvim' > /etc/environment
 
-#HOSTNAME set
+#Setting the Hostname
+echo "Changing the hostname file"
 echo "$HOSTNAME" > /etc/hostname
 
-#SYSTEMCTL
+#SYSTEMCTL setup
+echo "Enabling ssh, dhcpcd, and ntpd"
 systemctl enable sshd.service
 systemctl enable dhcpcd.service
 systemctl enable ntpd.service
 
 #exit chroot
+echo "Exiting Chroot"
 exit
 
 #unmount disks
+echo "Unmounting disks"
 umount /mnt/boot
 umount /mnt
 
