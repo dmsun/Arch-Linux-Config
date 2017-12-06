@@ -1,6 +1,6 @@
 #! /usr/bin/env bash
 # to run:
-# wget raw.githubusercontent.com/dmsun/Arch-Linux-Config/master/aur_setup.sh
+# wget raw.githubusercontent.com/dmsun/arch-linux-config/master/aur_setup.sh
 # chmod +x aur_setup.sh
 # ./aur_setup.sh
 
