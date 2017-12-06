@@ -4,6 +4,11 @@
 #chmod +x arch_install.sh
 #./arch_install
 
+#NOTE TO THE USER: ALWAYS VERIFY THE STEPS WITH THE ARCH LINUX WIKI
+#TODO: Include checks and sections for UEFI install
+#Prompt USER for Partition Scheme
+
+
 PARTITIONS='
 	size=512M, type=, bootable
 	size=30G, type=
