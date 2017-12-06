@@ -107,12 +107,3 @@ esac
 
 echo "Ready to reboot"
 
-
-
-
-
-
-
-
-
-

@@ -1,23 +1,23 @@
 #! /usr/bin/env bash
 # to run:
-# wget raw.githubusercontent.com/dmsun/Arch-Linux-Config/master/backup_config_files.sh
+# wget raw.githubusercontent.com/dmsun/arch-linux-config/master/backup_config_files.sh
 #chmod +x backup_config_files.sh
 #./backup_config_files.sh
 
 echo "Beginning backup of configuration files to Dropbox and github"
 echo "copying conky configuration"
-cp ~/.config/conky/conky.conf ~/Dropbox/Arch-Linux-Config/conky/
+cp ~/.config/conky/conky.conf ~/Dropbox/arch-linux-config/conky/
 echo "copying archey configuration"
-cp ~/.config/archey ~/Dropbox/Arch-Linux-Config/.archey.cfg
+cp ~/.config/archey ~/Dropbox/arch-linux-config/.archey.cfg
 echo "copying bachrc and bash_profile"
-cp ~/.bashrc ~/Dropbox/Arch-Linux-Config/
-cp ~/.bash_profile ~/Dropbox/Arch-Linux-Config/
+cp ~/.bashrc ~/Dropbox/arch-linux-config/
+cp ~/.bash_profile ~/Dropbox/arch-linux-config/
 echo "copying xinitrc"
-cp ~/.xinitrc ~/Dropbox/Arch-Linux-Config/
+cp ~/.xinitrc ~/Dropbox/arch-linux-config/
 
 
 echo "Commiting to github"
-cd ~/Dropbox/Arch-Linux-Config/
+cd ~/Dropbox/arch-linux-config/
 git add *
 echo "commiting regular files"
 git commit -m "adding regular files"
