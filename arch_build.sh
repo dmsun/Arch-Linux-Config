@@ -40,9 +40,9 @@ MEDIA="vlc kodi"
 
 #GAMES
 STEAM="steam"
-LINUX_GAMES="openra supertuxkart"
+LINUX_GAMES="openra supertuxkart supertux openarena 0ad"
 EMULATORS="ppsspp dolphin-emu"
-AUR_GAMES="gzdoom itch pcsx2-git"
+AUR_GAMES="tcs gzdoom itch pcsx2-git lutris"
 
 #DATASCIENCE
 DATA="opencv octave"
