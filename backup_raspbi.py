@@ -4,20 +4,17 @@ import os
 
 # change the directory to the rom hub
 cwd = os.chdir("/home/pi/RetroPie/roms")
-
+extensions = ['.srm', '.eep', '.state', '.hi', '.hs', '.fs'
+                                    '.dat', '.cfg', '.nv']
 def get_files(directory=os.getcwd()):
-    filelist = open("/home/pi/testfile.txt", "w")
-    folder_objects = os.listdir(directory)
-    for file in folder_objects:
+    )
+    for root, dir, file in os.walk(directory):
         a, file_extension = os.path.splitext(file)
-        if os.path.isdir(os.path.join(directory, file)):
-            directory_new =os.path.join(directory, file)
-            get_files(directory_new)
-        elif file_extension in ['.srm', '.eep', '.state', '.hi', '.hs', '.fs'
-                                    '.dat', '.cfg', '.nv']:
+        if file.endswith(tuple(extensions)):
+            print("yowza")
+        elif file_extension in extesions:
             print(os.path.join(directory, file))
             filelist.write(os.path.join(directory,file))
             filelist.write("\n")
-    filelist.close()
-
-get_files(cwd)
+with open("/home/pi/testfile.txt") as test:
+    get_files(cwd)
