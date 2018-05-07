@@ -11,5 +11,5 @@ def get_files(directory=os.getcwd()):
         for root, dir, files in os.walk(directory):
             for name in files:
                 if name.endswith(tuple(extensions)):
-                    test.write(os.path.join(root, name))
+                    test.write(os.path.join(root, name), "\n")
 get_files()
