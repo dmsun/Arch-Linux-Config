@@ -7,10 +7,11 @@ cwd = os.chdir("/home/pi/RetroPie/roms")
 extensions = ['.srm', '.eep', '.state', '.hi', '.hs', '.fs'
                                     '.dat', '.cfg', '.nv']
 def get_files(directory=os.getcwd()):
-    for root, dir, file in os.walk(directory):
+    for root, dir, files in os.walk(directory):
+        for name in files:
 #        a, file_extension = os.path.splitext(file)
-        if file.endswith(tuple(extensions)):
-            print(os.path.join(directory, file))
+            if name.endswith(tuple(extensions)):
+                print(os.path.join(root, name))
         #elif file_extension in extesions:
 #            print(os.path.join(directory, file))
 with open("/home/pi/testfile.txt") as test:
