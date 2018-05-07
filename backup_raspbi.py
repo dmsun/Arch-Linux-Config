@@ -8,10 +8,10 @@ extensions = ['.srm', '.eep', '.state', '.hi', '.hs', '.fs'
                                     '.dat', '.cfg', '.nv']
 def get_files(directory=os.getcwd()):
     for root, dir, file in os.walk(directory):
-        a, file_extension = os.path.splitext(file)
+#        a, file_extension = os.path.splitext(file)
         if file.endswith(tuple(extensions)):
             print(os.path.join(directory, file))
         #elif file_extension in extesions:
-            print(os.path.join(directory, file))
+#            print(os.path.join(directory, file))
 with open("/home/pi/testfile.txt") as test:
     get_files()
