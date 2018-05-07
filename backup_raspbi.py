@@ -3,10 +3,10 @@
 import os
 
 # change the directory to the rom hub
-os.chdir("/home/pi/RetroPie/roms")
+cwd = os.chdir("/home/pi/RetroPie/roms")
 
 def get_files(directory=os.getcwd()):
-    filelist = open("testfile.txt", "w")
+    filelist = open("/home/pi/testfile.txt", "w")
     folder_objects = os.listdir(directory)
     for file in folder_objects:
         a, file_extension = os.path.splitext(file)
@@ -19,3 +19,5 @@ def get_files(directory=os.getcwd()):
             filelist.write(os.path.join(directory,file))
             filelist.write("\n")
     filelist.close()
+
+get_files(cwd)
