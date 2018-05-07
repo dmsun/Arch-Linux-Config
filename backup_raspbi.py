@@ -13,7 +13,5 @@ def get_files(directory=os.getcwd()):
             print("yowza")
         elif file_extension in extesions:
             print(os.path.join(directory, file))
-            filelist.write(os.path.join(directory,file))
-            filelist.write("\n")
 with open("/home/pi/testfile.txt") as test:
-    get_files(cwd)
+    get_files()
