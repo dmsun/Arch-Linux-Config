@@ -42,14 +42,15 @@ MEDIA="vlc kodi"
 STEAM="steam"
 LINUX_GAMES="openra supertuxkart supertux openarena 0ad"
 EMULATORS="ppsspp dolphin-emu"
-AUR_GAMES="tcs gzdoom itch pcsx2-git lutris"
+AUR_GAMES="gzdoom pcsx2-git lutris"
 
 #DATASCIENCE
 DATA="opencv octave"
-AUR_DATA=anaconda #maybedothismanually
+AUR_DATA="anaconda" #maybedothismanually
 
 #AUR
-AUR="conky-colors-git conky-nvidia archey3 discord dropbox nautilus-dropbox nautilus-admin rednotebook spotify tilix whatsapp-desktop discord"
+#TO DO: CherryTree
+AUR="conky-colors-git conky-nvidia archey3 discord dropbox nautilus-dropbox nautilus-admin rednotebook spotify discord"
 
 #Install groups line by line in order to minimise clashes with dependencies.
 sudo pacman -Syu ${BASH}
