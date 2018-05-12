@@ -6,15 +6,16 @@
 
 echo "Beginning backup of configuration files to Dropbox and github"
 echo "copying conky configuration"
-cp ~/.config/conky/conky.conf ~/Dropbox/arch-linux-config/conky/
+cp -r ~/.config/conky/. ~/Dropbox/arch-linux-config/conky/.
 echo "copying archey configuration"
-cp ~/.config/archey ~/Dropbox/arch-linux-config/.archey.cfg
+cp -r ~/.config/archey/. ~/Dropbox/arch-linux-config/archey/
 echo "copying bachrc and bash_profile"
-cp ~/.bashrc ~/Dropbox/arch-linux-config/
-cp ~/.bash_profile ~/Dropbox/arch-linux-config/
+cp ~/.bashrc ~/Dropbox/arch-linux-config/.bashrc
+cp ~/.bash_profile ~/Dropbox/arch-linux-config/.bash_profile
 echo "copying xinitrc"
-cp ~/.xinitrc ~/Dropbox/arch-linux-config/
-
+cp ~/.xinitrc ~/Dropbox/arch-linux-config/.xinitrc
+echo "copying nvim configuration"
+cp  ~/.config/nvim/. ~/Dropbox/arch-linux-config/nvim/
 
 echo "Commiting to github"
 cd ~/Dropbox/arch-linux-config/
