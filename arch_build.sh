@@ -18,6 +18,7 @@ SOUND="alsa-firmware alsa-tools alsa-utils pulseaudio pulseaudio-bluetooth pulse
 
 #UTILITIES
 UTIL="openssh rsync samba transmission-gtk unrar wireless_tools gparted gzip htop imagemagick bzip2 deepin-screenshot ecm-tools"
+PYTHON="python-numpy python-pandas python-matplotlib python-scipy jupyter-notebook" 
 
 #FONTS
 AUR_FONTS="ttf-ms-fonts numix-circle-icon-theme-git numix-gtk-theme-git numix-icon-theme-git paper-gtk-theme-git paper-icon-theme"

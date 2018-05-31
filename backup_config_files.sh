@@ -8,7 +8,7 @@ echo "Beginning backup of configuration files to Dropbox and github"
 echo "copying conky configuration"
 cp -r ~/.config/conky/. ~/Dropbox/arch-linux-config/conky/.
 echo "copying archey configuration"
-cp -r ~/.config/archey/. ~/Dropbox/arch-linux-config/archey/
+cp -r ~/.archey.cfg ~/Dropbox/arch-linux-config/.archey.cfg
 echo "copying bachrc and bash_profile"
 cp ~/.bashrc ~/Dropbox/arch-linux-config/.bashrc
 cp ~/.bash_profile ~/Dropbox/arch-linux-config/.bash_profile

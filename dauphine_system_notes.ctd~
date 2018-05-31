@@ -1,0 +1,722 @@
+<?xml version="1.0" ?>
+<cherrytree>
+	<node custom_icon_id="7" foreground="" is_bold="False" name="To Do List" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512514273.45" ts_lastsave="1527478936.95" unique_id="43">
+		<rich_text>☐ Complete the Arch Linux System Documentation Section
+   ☑ Include a description of how the Github Scripts are built, these can also be leveraged to determine the software packages that are most important
+   ☑ Hardware, Partitioning Scheme
+   ☐ Key Configurations for Gnome Desktop Environment
+   ☐ Arch Install Configuration Scripts
+   ☐ Redo AUR setup for trizen
+☐ Add configuration files for applications in home directory to the backup config files backup script. Confirm that the cronjob works
+☐ Add samba configuration to backup script
+
+
+
+
+
+
+Champion, quick, salon, renew, great, vanish, fault, antique, hold, session, youth, clean
+
+</rich_text>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Arch Linux Environment Documentation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513615.17" ts_lastsave="1512531264.7" unique_id="28">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Hardware" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513671.59" ts_lastsave="1512514879.39" unique_id="30">
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+</rich_text>
+			<table char_offset="0" col_max="400" col_min="40">
+				<row>
+					<cell>Motherboard</cell>
+					<cell>ASUS P8B75-M GA 1155 Micro ATX Intel Motherboard</cell>
+				</row>
+				<row>
+					<cell>CPU</cell>
+					<cell>Intel i7-3770</cell>
+				</row>
+				<row>
+					<cell>CPU Cooler</cell>
+					<cell>Cooler Master Hyper 212X</cell>
+				</row>
+				<row>
+					<cell>RAM</cell>
+					<cell>Kingston HyperX FURY 16G Kit (8Gx2) 2666 </cell>
+				</row>
+				<row>
+					<cell>SSD</cell>
+					<cell>Samsung 850 EVO 512G</cell>
+				</row>
+				<row>
+					<cell>HDD</cell>
+					<cell>Samsung 3.5&quot; Barracuda 2TB</cell>
+				</row>
+				<row>
+					<cell>GPU</cell>
+					<cell>Asus Strix GTX 960 OC 4GB</cell>
+				</row>
+				<row>
+					<cell>PSU</cell>
+					<cell>Corsair 80+ Bronze CX V3 430V</cell>
+				</row>
+				<row>
+					<cell>Case</cell>
+					<cell>Thermaltake USB3.0 Versa H24</cell>
+				</row>
+				<row>
+					<cell>OS</cell>
+					<cell>Arch Linux</cell>
+				</row>
+				<row>
+					<cell>Component</cell>
+					<cell>Part Name</cell>
+				</row>
+			</table>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Software Packages" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513903.26" ts_lastsave="1512514901.6" unique_id="36">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Standard Packages" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513921.55" ts_lastsave="1512513921.55" unique_id="37">
+				<rich_text></rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="AUR - Arch User Repository" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513936.71" ts_lastsave="1512513936.71" unique_id="38">
+				<rich_text></rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Partitioning Scheme and Filesystems" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513665.95" ts_lastsave="1512597880.82" unique_id="29">
+			<rich_text>
+sdb      8:16   0 931.5G  0 disk 
+└─sdb1   8:17   0 931.5G  0 part /home/mj/backups
+sdc      8:32   0 298.1G  0 disk 
+sdd      8:48   0 465.8G  0 disk 
+└─sdd1   8:49   0     1G  0 part /boot
+└─sdd2   8:50   0 433.5G  0 part /
+└─sdd3   8:51   0  31.3G  0 part [SWAP]
+sde      8:64   0   1.8T  0 disk 
+└─sde1   8:65   0   1.8T  0 part /home
+
+</rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Games" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512514901.6" ts_lastsave="1513814241.69" unique_id="45">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Free and Open Source Games" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513813390.85" ts_lastsave="1521244333.15" unique_id="73">
+				<rich_text>Big list
+</rich_text>
+				<rich_text link="webs https://osgameclones.com/">https://osgameclones.com/</rich_text>
+				<rich_text>
+
+Noteables:
+
+Freedoom
+    - Phase1
+    - Phase2
+    - Doom 1 &amp; 2 IWAD replacements
+OpenArena
+    - Much like Quake Arena
+UnrealTournament 4
+    - currently in an early alpha phase, but was playable. Includes Bots as well
+Alien Arena
+    - combination of Quake and Unreal Tournament
+SuperTuxKart
+    - like Mario Kart
+OpenRA
+    - requires proprietary content from Command and Conquer Games - though some of these have been open sourced as well
+Secret Maryo Chronicles
+    - 2D Platformer
+    - Now forked and actively maintained in </rich_text>
+				<rich_text link="webs https://github.com/Secretchronicles/TSC">https://github.com/Secretchronicles/TSC</rich_text>
+				<rich_text>
+    - Shit!!!
+Commander Genius
+    - Commander Keen clone
+0.A.D.
+    - Age of Empires like
+Zero-K
+    - RTS like Supreme Commander
+SuperTux
+    - SuperMario but with Tux!
+The Battle for Wesnoth
+    - Turn Based Strategy Game
+
+
+Fangames
+    - Legality questionable
+    - Pokemon Prism
+    - Pokemon Anniversary Crystal
+    
+    </rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Platforms" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513814241.69" ts_lastsave="1513814254.57" unique_id="74">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Lutris" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512598490.79" ts_lastsave="1527482325.21" unique_id="59">
+					<rich_text>Lutris is an Open Source project aimed at creating an Open Gaming Platform. It's goal is to be more than a unified interface for launching games. So far, it's had very limited use to me. I've tried using it to manage Windows only games through Wine, but it just hasn't worked 100% of the time. Wolfenstein thus far is working pretty flawlessly in my mind, and I'm looking forward to it. However, DOOM BFG (Native, and Steam), DOOM 2016, and Batman Arkham Asylum all are not working for me. They're compatibility in Wine is rated highly, so I'm not 100% sure how to work around this. I'll try and drop using it to install Wine Games for now. I do have enough to contend with at the moment.
+
+Runners are the systems used to play, and launch different gaming applications in Lutris. There is a Native Linux Runner, Steam Runners, Wine Runners, PPSSPP runners, PCSX2 Runners, Citra (I believe). These are reminiscent of Libretro's Retroarch for me. It's still early days for the development of Lutris, but I do find it very promising. The interface is simplistic and well designed, I just want more functionality out of it.
+
+Update:
+ You can use system-wide executables for the Runners in Lutris. So for example, I had previously installed PCSX2 via pacman/trizen, and did not want to use the Lutris runner for PCSX2. However, it the executable which is used to play the games is configurable. You can point to the executable of a program by finding the process ID in the command top or something like ps -aux | grep “PROCESS NAME” --- note use the right capitalisation. Once you have the process id you can then run the following command:
+ 
+ ls -l /proc/&lt;PID&gt;/exe
+ 
+ 
+</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Retroarch/Lakka" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513814254.58" ts_lastsave="1513820657.47" unique_id="75">
+					<rich_text></rich_text>
+					<node custom_icon_id="0" foreground="" is_bold="False" name="Cores" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513820657.47" ts_lastsave="1513820657.47" unique_id="76">
+						<rich_text></rich_text>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Desktop Environment" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513877.33" ts_lastsave="1512513888.55" unique_id="34">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Gnome Configuration" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513888.55" ts_lastsave="1512513888.55" unique_id="35">
+				<rich_text></rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Backup Strategy" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513959.43" ts_lastsave="1512513988.54" unique_id="39">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Cronjob" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512531264.7" ts_lastsave="1512531276.03" unique_id="57">
+				<rich_text></rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Github" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513965.54" ts_lastsave="1512531199.28" unique_id="40">
+				<rich_text>
+</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Arch Install" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512529394.92" ts_lastsave="1512530290.38" unique_id="49">
+					<rich_text>The Arch Install script aims to implement the rough current environment on a new install. This will quickly enable me to get up and running another instance, either in a virtual environment through Virtual Box, or if my system has some disastrous corruption. There are a few to dos here which I'll also log within the code as well. 
+
+
+</rich_text>
+					<rich_text link="webs https://github.com/dmsun/Arch-Linux-Config/blob/master/arch_install.sh">https://github.com/dmsun/qrch-linux-config/blob/master/arch_install.sh</rich_text>
+					<rich_text>
+
+An example of the code as of 6th December 2017:
+
+</rich_text>
+					<rich_text justification="left"></rich_text>
+					<codebox char_offset="456" frame_height="500" frame_width="700" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="sh" width_in_pixels="True">#! /usr/bin/env bash
+# to run:
+# wget raw.githubusercontent.com/dmsun/arch-linux-config/master/arch_install.sh
+#chmod +x arch_install.sh
+#./arch_install
+
+PARTITIONS='
+	size=512M, type=, bootable
+	size=30G, type=
+	type=
+'
+DISK=&quot;/dev/sda&quot;
+MIRROR=&quot;Australia&quot;
+
+NEW_GROUPS=(wheel)
+NEW_USERNAME=&quot;mj&quot;
+
+HOSTNAME=&quot;dauphine&quot;
+TIMEZONE=&quot;Australia/Sydney&quot;
+
+LOCALE=&quot;en_AU.utf-8&quot;
+
+USERNAME=&quot;mj&quot;
+
+#define passwds
+
+while true; do
+	read -s -p &quot;Root password:  &quot; PASSWORD
+	echo
+	read -s -p &quot;Confirm password:  &quot; PASSWORD2
+	echo
+	[ &quot;$PASSWORD&quot; = &quot;$PASSWORD2&quot; ] &amp;&amp; break
+	echo &quot;Passwords don't match. Try again&quot;
+done
+
+#PARTITION the disk
+#TODO - auto update this with user entry
+echo &quot;Formatting the drives for install&quot;
+fdisk /dev/sda
+
+echo &quot;Creating the file system&quot;
+mkfs.ext4 /dev/sda1	#boot BIOS
+mkfs.ext4 /dev/sda2	#root
+mkfs.ext4 /dev/sda3	#home
+
+echo &quot;Mounting the partitions&quot;
+mount /dev/sda2 /mnt/	#root
+mkdir /mnt/boot
+mount /dev/sda1 /mnt/boot
+mkdir /mnt/home
+mount /dev/sda3 /mnt/home
+
+#Check the internet
+echo &quot;Checking the internet connection&quot;
+ping www.google.com
+
+#Update pacman
+echo &quot;Updating pacman&quot;
+pacman -Syu
+
+#Update system clock
+echo &quot;Setting the time to ntp&quot;
+timedatectl set-ntp true
+
+#Re-arranging entries in Mirrorlist
+echo &quot;Re-arranging the Mirrorlist for Australia&quot;
+vim /etc/pacman.d/mirrorlist \
+'+5' '+read ! echo' \
+'+r ! grep &quot;'&quot;${MIRROR}&quot;'&quot; -A 1 % | grep -v &quot;^--&quot;' \
+'+wq'
+
+#Install the Base system
+echo &quot;Installing the base system&quot;
+local CORE_PACKAGES=&quot;base base-devel grub openssh ntp wget neovim iw wpa_supplicant dialog wireless_tools&quot;
+pacman-key --refresh-keys
+pacstrap /mnt/ ${CORE_PACKAGES}
+genfstab
+
+#Change root into system
+echo &quot;Changing root into the newly installed system&quot;
+arch-chroot /mnt/
+
+#Core Configuration
+echo &quot;Configuring the timezone&quot;
+ln -sf /usr/share/zoneinfo/${TIMEZONE} /etc/localtime
+hwclock --systohc #assumes HW clock is set to UTC
+
+#Setting up the locale information
+echo &quot;Configuring the locale.gen and default Language&quot;
+sed -i 's/^#en_AU\.UTF/en_AU\.UTF/' /etc/locale.gen
+locale-gen
+echo &quot;LANG=${LOCALE}&quot; &gt; /etc/locale.conf
+
+#Change root password
+echo &quot;Enter in the root password below&quot;
+echo &quot;root:$PASSWORD&quot; | chpasswd
+
+#Add users
+echo &quot;Adding default users to wheel group with bash shell&quot;
+useradd -m -G wheel -s /bin/bash $USERNAME
+echo &quot;Changing the username passwords&quot;
+echo $USERNAME:$PASSWORD | chpasswd
+
+#Installing Grub for a bootloader
+echo &quot;Installing and configuring GRUB&quot;
+grub-install --target=i386-pc ${DISK}
+grub-mkconfig -o /boot/grub/grub.cfg
+
+#Updating the SUDOERS file to uncomment %wheel ALL=(ALL) ALL&quot; from sudoers
+echo &quot;Updating the SUDOERS file&quot;
+sed -i 's/^#\s*\(%wheel\s*ALL=(ALL)\s*NOPASSWD:\s*ALL\)/\1/' /etc/sudoers
+
+#Adding Neo-Vim environment variable and changing the default editor
+echo &quot;Setting Neo-vim to be the default Editor&quot;
+echo -e 'EDITOR=nvim' &gt; /etc/environment
+
+#Setting the Hostname
+echo &quot;Changing the hostname file&quot;
+echo &quot;$HOSTNAME&quot; &gt; /etc/hostname
+
+#SYSTEMCTL setup
+echo &quot;Enabling ssh, dhcpcd, and ntpd&quot;
+systemctl enable sshd.service
+systemctl enable dhcpcd.service
+systemctl enable ntpd.service
+
+#exit chroot
+echo &quot;Exiting Chroot&quot;
+exit
+
+#unmount disks
+echo &quot;Unmounting disks&quot;
+umount /mnt/boot
+umount /mnt
+
+echo &quot;Ready to reboot&quot;
+
+
+
+</codebox>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Arch Build" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512529849.64" ts_lastsave="1513824603.54" unique_id="53">
+					<rich_text>This script is where the bulk of the software applications are installed. The first groups of applications that are installed are some basic bash helpers, graphics drivers, sound devices, the Gnome Desktop Environment, and some general utilities. Subsequently, the user is prompted to answer whether or not they would like to install packages from the Arch User Repository. If they answer yes, then they will run another script which sets up the PACAUR as an AUR Helper, and AUR applications/fonts. The AUR script is detailed in this section - </rich_text>
+					<rich_text link="node 54">AUR Setup</rich_text>
+					<rich_text>.
+
+</rich_text>
+					<rich_text link="webs https://github.com/dmsun/arch-linux-config/blob/master/arch_build.sh">https://github.com/dmsun/arch-linux-config/blob/master/arch_build.sh</rich_text>
+					<rich_text>
+
+
+
+</rich_text>
+					<rich_text justification="left"></rich_text>
+					<codebox char_offset="628" frame_height="500" frame_width="700" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="sh" width_in_pixels="True">#! /usr/bin/env bash
+# to run:
+# wget raw.githubusercontent.com/dmsun/arch-linux-config/master/arch_build.sh
+#chmod +x arch_build.sh
+#./arch_build
+
+#BASH
+BASH=bash-completion
+
+#GRAPHICS
+#this will depend on your build, if you're using an AMD gpu, use AMDGPU. Try lspci | grep -e VGA -e 3D
+
+GRAPHICS_NVIDIA=&quot;nvidia nvidia-utils lib32-nvidia-utils nvidia-settings opencl-nvidia ocl-icd vulkan-icd-loader&quot;
+GRAPHICS_AMD=&quot;mesa lib32-mesa amdgpu xf86-video-amdgpu opencl-nvidia opencl-mesa ocl-icd vulkan-radeon vulkan-icd-loader&quot;
+
+#SOUND
+SOUND=&quot;alsa-firmware alsa-tools alsa-utils pulseaudio pulseaudio-bluetooth pulseaudio-equalizer pulseaudio-gconf pulseaudio-jack&quot;
+
+#UTILITIES
+UTIL=&quot;openssh rsync samba transmission-gtk unrar wireless_tools gparted gzip htop imagemagick bzip2 deepin-screenshot ecm-tools&quot;
+
+#FONTS
+AUR_FONTS=&quot;ttf-ms-fonts numix-circle-icon-theme-git numix-gtk-theme-git numix-icon-theme-git paper-gtk-theme-git paper-icon-theme&quot;
+
+#XSERVER
+XSERV=&quot;xorg-server xorg-twm xorg-xclock xorg-xinit&quot;
+
+#GNOME
+GNOME=&quot;gdm gnome-backgrounds gnome-themes-standard networkmanager nautilus mousetweaks awaita-icon-theme&quot;
+GNOME_EXTRA=&quot;evolution gnome-calendar gnome-photos gnome-tweak-tool dconf-editor brasero&quot;
+
+#OFFICE
+OFFICE=libreoffice-fresh 
+
+#WEBBROWSER
+CHROME=&quot;chrome-gnome-shell-git chromium&quot;
+
+#MEDIA
+MEDIA=&quot;vlc kodi&quot;
+
+#GAMES
+STEAM=&quot;steam&quot;
+LINUX_GAMES=&quot;openra supertuxkart supertux openarena 0ad&quot;
+EMULATORS=&quot;ppsspp dolphin-emu&quot;
+AUR_GAMES=&quot;tcs gzdoom itch pcsx2-git lutris&quot;
+
+#DATASCIENCE
+DATA=&quot;opencv octave&quot;
+AUR_DATA=anaconda #maybedothismanually
+
+#AUR
+AUR=&quot;conky-colors-git conky-nvidia archey3 discord dropbox nautilus-dropbox nautilus-admin rednotebook spotify tilix whatsapp-desktop discord&quot;
+
+#Install groups line by line in order to minimise clashes with dependencies.
+sudo pacman -Syu ${BASH}
+sudo pacman -Syu ${UTIL}
+sudo pacman -Syu ${SOUND}
+
+read -p &quot;Is your GPU AMD or NVIDIA (AMD/NVIDIA)? &quot; answer
+case ${answer:0:1} in
+    a|A )
+        echo &quot;You have selected AMD&quot;
+		sudo pacman -Syu ${GRAPHIC_AMD}
+    ;;
+    * )
+        echo &quot;You have selected NVIDIA&quot;
+		sudo pacman -Syu ${GRAPHIC_NVIDIA}
+    ;;
+esac
+
+echo &quot;Installing Xserver features&quot;
+sudo pacman -Syu ${XSERV}
+echo &quot;Installing the required Gnome Desktop environment&quot;
+sudo pacman -Syu ${GNOME}
+echo &quot;Installing the required Gnome Extra packages&quot;
+sudo pacman -Syu ${GNOME_EXTRA}
+echo &quot;Installing Libre Office&quot;
+sudo pacman -Syu ${OFFICE}
+echo &quot;Installing Chromium web browser&quot;
+sudo pacman -Syu ${CHROME}
+echo &quot;Installing VLC and Kodi for Media&quot;
+sudo pacman -Syu ${MEDIA}
+
+#installing games can be done through Lutris
+echo &quot;Installing Steam&quot;
+sudo pacman -Syu ${STEAM}
+
+#begin install of AUR
+read -p &quot;Do you want to install AUR packages (y/n)? &quot; answer
+case ${answer:0:1} in
+    y|Y )
+        echo &quot;You have Yes - being the install of AUR&quot;
+		echo &quot;Setting up and installing the Arch User Repository&quot;
+		/.aur_setup.sh
+		
+		echo &quot;Installing AUR packages&quot;
+		pacaur -Syu ${AUR}
+		echo &quot;Installing AUR fonts and Icons&quot;
+		pacaur -Syu ${AUR_FONTS}
+		echo &quot;Installing AUR Games&quot;
+		pacaur -Syu ${AUR_GAMES}
+    ;;
+    * )
+        echo &quot;You have select No - do not install AUR&quot;
+    ;;
+esac
+
+echo &quot;Ready to reboot&quot;
+
+</codebox>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="AUR Setup" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512530618.77" ts_lastsave="1512530776.25" unique_id="54">
+					<rich_text>The AUR Setup script is used to install and  configure the PACAUR Arch User Repository Helper. It'll also scrub the home directory of any downloaded files. This script will need to be run by a user with SUDO permissions. 
+
+</rich_text>
+					<rich_text link="webs https://github.com/dmsun/arch-linux-config/blob/master/arch_build.sh">https://github.com/dmsun/arch-linux-config/blob/master/aur_setup.sh</rich_text>
+					<rich_text>
+
+
+</rich_text>
+					<rich_text justification="left"></rich_text>
+					<codebox char_offset="293" frame_height="515" frame_width="700" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="sh" width_in_pixels="True">#! /usr/bin/env bash
+# to run:
+# wget raw.githubusercontent.com/dmsun/arch-linux-config/master/aur_setup.sh
+# chmod +x aur_setup.sh
+# ./aur_setup.sh
+
+echo &quot;Checking for system updates...&quot;
+sudo pacman -Syu
+
+echo &quot;Installing pacaur dependencies&quot;
+sudo pacman -Syu base-devel --needed
+sudo pacman -Syu expac yajl git --noconfirm --needed
+
+echo &quot;Creating temporary install area&quot;
+mkdir -p ~/tmp/pacaur_install
+cd ~/tmp/pacaur_install
+
+#install cower from AUR
+echo &quot;Cloning Cower into temporary directory&quot;
+git clone https:/aur.archlinux.org/cower.git
+cd cower
+echo &quot;Installing Cower&quot;
+makepkg -i
+cd ..
+#install pacaur from AUR
+echo &quot;Cloning Pacaur into temporary directory&quot;
+git clone https://aur.archlinux.org/pacaur.git
+cd pacaur
+echo &quot;Installing Pacuar&quot;
+makepkg -i
+
+#cleanup files
+cd ~
+echo &quot;Removing temporary files&quot;
+rm -r ~/tmp/pacaur_install
+echo &quot;Complete&quot;</codebox>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Steam and Game Saves" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512531105.44" ts_lastsave="1512531203.98" unique_id="55">
+					<rich_text>The following script will be used as part of a Cronjob that will be run fortnightly. The requirement is to be run as the USER and have Dropbox installed. </rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Backup Configuration Files" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512531199.28" ts_lastsave="1512611740.87" unique_id="56">
+					<rich_text>
+The intent of this script is to automatically run a scipt that will automatically backup some of the key configuration files. It's difficult to remember the exact configurations that are required to build the current environment and as such, these files are backed up to Dropbox. In subsequent installs, they can be downloaded. Or alternatively, Symlinks can be used to point to the Dropbox versions of these configuration files.
+
+At the moment, the configuration files that are backed up:
+
+    - Bash Profile
+    - Bashrc
+    - Conky configuration files
+    - Archey Configuration
+    - xinitrc
+</rich_text>
+					<rich_text justification="left"></rich_text>
+					<codebox char_offset="597" frame_height="500" frame_width="700" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="sh" width_in_pixels="True">#! /usr/bin/env bash
+# to run:
+# wget raw.githubusercontent.com/dmsun/arch-linux-config/master/backup_config_files.sh
+#chmod +x backup_config_files.sh
+#./backup_config_files.sh
+
+echo &quot;Beginning backup of configuration files to Dropbox and github&quot;
+echo &quot;copying conky configuration&quot;
+cp ~/.config/conky/conky.conf ~/Dropbox/arch-linux-config/conky/
+echo &quot;copying archey configuration&quot;
+cp ~/.config/archey ~/Dropbox/arch-linux-config/.archey.cfg
+echo &quot;copying bachrc and bash_profile&quot;
+cp ~/.bashrc ~/Dropbox/arch-linux-config/
+cp ~/.bash_profile ~/Dropbox/arch-linux-config/
+echo &quot;copying xinitrc&quot;
+cp ~/.xinitrc ~/Dropbox/arch-linux-config/
+
+
+echo &quot;Commiting to github&quot;
+cd ~/Dropbox/arch-linux-config/
+git add *
+echo &quot;commiting regular files&quot;
+git commit -m &quot;adding regular files&quot;
+git add .*
+echo &quot;commiting hidden files&quot;
+git commit -m &quot;adding hidden files&quot;
+git push
+
+cd ~
+echo &quot;Backing up key configuration files is complete&quot;
+
+
+
+</codebox>
+				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="NAS Backups" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513971.34" ts_lastsave="1512513971.34" unique_id="41">
+				<rich_text></rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Local System Backup" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513988.54" ts_lastsave="1512513988.54" unique_id="42">
+				<rich_text></rich_text>
+			</node>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Windows Environment Documentation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513702.54" ts_lastsave="1512974906.58" unique_id="31">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Backups" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512513713.67" ts_lastsave="1512513713.67" unique_id="33">
+			<rich_text></rich_text>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Software Management" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512969178.15" ts_lastsave="1512974944.69" unique_id="60">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Package Management" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512974933.58" ts_lastsave="1512974947.39" unique_id="32">
+				<rich_text>Chocolatey is an Open Source Project aimed at replicating the Linux Package Management. It integrates well with Powershell and is portable to other versions of Windows. There is also OneGet which is another Open Source extension of Microsoft's native Package Management system - </rich_text>
+				<rich_text link="webs https://github.com/OneGet/oneget">OneGet</rich_text>
+				<rich_text> (also referred to as NuGet). However, ultimately I've gone with Chocolatey.
+
+Since Package Management can be administered and controlled through a command line tool like Powershell, it would be best practice to keep my install and development workflows centralised and controlled around these features. 
+
+The Chocolatey Install has been described in ~/Dropbox folder. I've also created a Git Reporsitory for my windows configuration which contains useful powershell scripts that will clean and or automate backups as needed.
+
+</rich_text>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Browser" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512974906.58" ts_lastsave="1513820865.16" unique_id="64">
+				<rich_text scale="h1">Firefox - Quantum and Privacy</rich_text>
+				<rich_text>
+A more recent advent of mine has been the departure from the Google world. This has been primarily driven for a focus on support FOSS. Chromium is FOSS, but it has been mentioned that it does send encrypted data back to Google. I'd rather not have Google call home and support such a massive monopoly - instead more collaborative projects that have been created in order to support the collective global community. 
+
+As a result of this juncture, I've exported my bookmarks to Dropvox and imported them into Firefox! The Firefox Quantum install has been smooth. I've also added to DuckDuckGo Plugin for increased search privacy.
+
+UPDATE DEC2017: Well well well, now there's egg on my face. Mozilla have released a new version which included the ability to drop in any type of plugin at any time, without our permission. How shitty. They recently added a plugin which would turn all ads into iRobot ads. Bleh.
+
+</rich_text>
+				<rich_text scale="h1">DuckDuckGo</rich_text>
+				<rich_text>
+DuckDuckGo is a OS search engine which emphasises privacy first. Again, the main reason for this is to minimise me being a product for the massively global corporations to sell. I want to have that control. Unfortunately, a potential drawback is that searches are less personalised and perhaps, more central. The algorithms haven't learned my preferences and leanings, and therefore I may not see the same recommendations that I might otherwise have on the Google Platform. 
+</rich_text>
+			</node>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Text Editor" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512969366.47" ts_lastsave="1513820812.29" unique_id="61">
+			<rich_text justification="center" scale="h1" weight="heavy">Neovim</rich_text>
+			<rich_text>
+The primary software for CLI text editing I am using is </rich_text>
+			<rich_text link="webs https://neovim.io/">Neovim</rich_text>
+			<rich_text> which is a fork of the old-timey Vim. It's a very powerful tool, which also supports asynchronous something or rather (useful for autocomplete methinks). It's got a bit of a learning curve but I'm climbing that ladder and installing more Plugins to broaden the scope and capabilities. 
+
+The first of which is Vundle - a Plugin Manager for Vim which is also portable to Neovim. Thankfully, many of the plugins which are supported by Vim are also supported by Neovim. 
+
+The current list of plugins installed for Neovim as of December 2017:
+   •  vundle
+      ◇ Plugin Management
+   • vim-markdown
+      ◇ for exporting to HTML markdown and improving capabilities and workflows around documentation
+   • 
+
+~/_vimrc:
+
+</rich_text>
+			<rich_text justification="left"></rich_text>
+			<rich_text>
+
+</rich_text>
+			<rich_text justification="center" scale="h1" weight="heavy">Notepad++</rich_text>
+			<rich_text>
+Notepad++ is also installed as a simple graphical based note editing tool. It's Free and Open Source and fully pluginable. I generally use it when I'm too tired of memorising how to use Neovim.
+</rich_text>
+			<codebox char_offset="784" frame_height="740" frame_width="700" highlight_brackets="True" show_line_numbers="True" syntax_highlighting="sh" width_in_pixels="True">set nocompatible              &quot; be iMproved, required
+filetype off                  &quot; required
+
+set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+&quot; &quot; alternatively, pass a path where Vundle should install plugins
+&quot; &quot;call vundle#begin('~/some/path/here')
+
+&quot; &quot; let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+&quot; &quot; The following are examples of different formats supported.
+&quot; &quot; Keep Plugin commands between vundle#begin/end.
+&quot; &quot; plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+&quot; &quot; plugin from http://vim-scripts.org/vim/scripts.html
+&quot; &quot; Plugin 'L9'
+&quot; &quot; Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+&quot; &quot; git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+&quot; &quot; The sparkup vim script is in a subdirectory of this repo called vim.
+&quot; &quot; Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'ascenator/L9', {'name': 'newL9'}
+Plugin 'godlygeek/tabular'
+Plugin 'plasticboy/vim-markdown'
+&quot;
+&quot; &quot; Install L9 and avoid a Naming conflict if you've already installed a
+&quot; &quot; different version somewhere else.
+&quot; &quot; All of your Plugins must be added before the following line
+call vundle#end()            &quot; required
+filetype plugin indent on    &quot; required
+&quot; &quot; To ignore plugin indent changes, instead use:
+&quot; &quot;filetype plugin on
+&quot; &quot;
+&quot; &quot; Brief help
+&quot; &quot; :PluginList       - lists configured plugins
+&quot; &quot; :PluginInstall    - installs plugins; append `!` to update or just
+&quot; :PluginUpdate
+&quot; &quot; :PluginSearch foo - searches for foo; append `!` to refresh local cache
+&quot; &quot; :PluginClean      - confirms removal of unused plugins; append `!` to
+&quot; auto-approve removal
+&quot; &quot;
+&quot; &quot; see :h vundle for more details or wiki for FAQ
+&quot; &quot; Put your non-Plugin stuff after this line:
+
+</codebox>
+		</node>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Git Repository" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512974224.96" ts_lastsave="1512974224.96" unique_id="63">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Batch or Powershell Scripts" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512969564.05" ts_lastsave="1512974233.85" unique_id="62">
+				<rich_text></rich_text>
+			</node>
+		</node>
+	</node>
+	<node custom_icon_id="0" foreground="" is_bold="False" name="Hobby Projects" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512515052.0" ts_lastsave="1513222975.67" unique_id="48">
+		<rich_text></rich_text>
+		<node custom_icon_id="0" foreground="" is_bold="False" name="Development Tools" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512529705.74" ts_lastsave="1513119248.77" unique_id="50">
+			<rich_text></rich_text>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="Unity" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512529713.75" ts_lastsave="1513119131.9" unique_id="51">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Overview" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513119126.99" ts_lastsave="1513119133.77" unique_id="65">
+					<rich_text>Unity3D is a game engine that supports a wide variety of games</rich_text>
+				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="RPGMaker" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1512529718.86" ts_lastsave="1513119265.02" unique_id="52">
+				<rich_text></rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Overview" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513119265.02" ts_lastsave="1513119266.44" unique_id="67">
+					<rich_text>RPGMaker has had an explosion on Steam in 2017...damn I should of been on that bus!
+</rich_text>
+				</node>
+			</node>
+			<node custom_icon_id="0" foreground="" is_bold="False" name="GameMaker Studio" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513119248.77" ts_lastsave="1513124402.16" unique_id="66">
+				<rich_text>
+</rich_text>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Hotline Miami" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513119721.99" ts_lastsave="1513119727.8" unique_id="68">
+					<rich_text>Supposedly very easy to use, point and click</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Free Version" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513124388.2" ts_lastsave="1513124425.77" unique_id="69">
+					<rich_text>I've started a free trial which includes some resource limitations. I'm so pumped to get this going.
+
+</rich_text>
+				</node>
+				<node custom_icon_id="0" foreground="" is_bold="False" name="Reference Documentation" prog_lang="custom-colors" readonly="False" tags="" ts_creation="1513124402.18" ts_lastsave="1513124418.54" unique_id="70">
+					<rich_text link="webs http://docs2.yoyogames.com/" scale="h1">Getting Started</rich_text>
+					<rich_text>
+</rich_text>
+				</node>
+			</node>
+		</node>
+	</node>
+</cherrytree>
